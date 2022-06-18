@@ -1,8 +1,5 @@
 pymongo
-aiohttp
 telethon
 dnspython
-aiohttp_session
-aiohttp_jinja2
 python-dotenv
 redis
