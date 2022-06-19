@@ -63,16 +63,16 @@ async def rm_chat(e):
         chat_id = e.chat_id
         remove_chat(chat_id)
         await e.reply("Removed")
-    except Exception as e:
-        await e.reply("Error : {}".format(e))
+    except Exception as a:
+        await e.reply("Error : {}".format(a))
 
 @bot.on(events.NewMessage(pattern="/link", from_users=devs))
 async def get_link_(e):
     try:
         chat_id = e.chat_id
         await e.reply(get_link(chat_id))
-    except Exception as e:
-        await e.reply("Error : {}".format(e))
+    except Exception as s:
+        await e.reply("Error : {}".format(s))
 
 
 @bot.on(events.NewMessage(pattern="/start"))
