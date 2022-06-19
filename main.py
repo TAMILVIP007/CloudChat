@@ -67,7 +67,7 @@ async def rm_chat(e):
         await e.reply("Error : {}".format(e))
 
 @bot.on(events.NewMessage(pattern="/link", from_users=devs))
-async def get_link(e):
+async def get_link_(e):
     try:
         chat_id = e.chat_id
         await e.reply(get_link(chat_id))
